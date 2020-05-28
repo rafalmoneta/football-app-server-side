@@ -1,0 +1,24 @@
+
+
+
+export default {
+  Query: {
+    teams: async(_, __, {models}) => {
+      return await models.Team.findAll();
+    },
+    team: async(_, { id }, {models}) => {
+      return await models.Team.findByPk(id);
+    }
+  },
+
+  Mutation: {
+    addTeam: async(_, {input}, {models}) => {
+      return await models.Team.create(input);
+    },
+    deleteTeam: async(_, {id}, {models}) => {
+      return await models.Team.destroy({
+        where: {id},
+      });
+    },
+  }
+}
