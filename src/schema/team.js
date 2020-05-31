@@ -18,7 +18,7 @@ export default gql`
     stadium: String!
     about: String
     colours: String
-    img: String
+    imageURL: String
   }
 
   input NewTeamInput {
@@ -26,7 +26,7 @@ export default gql`
     stadium: String!
     about: String
     colours: String
-    img: String
+    imageURL: String
   }
 
 

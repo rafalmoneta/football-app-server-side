@@ -115,7 +115,7 @@ const createUsersWithMessages = async date => {
       stadium: 'Camp Nou',
       about: 'String',
       colours: "String",
-      img: "Jakiś string"
+      imageURL: "https://i.imgur.com/p8zqNbR.png"
     }
   );
 
@@ -125,7 +125,7 @@ const createUsersWithMessages = async date => {
       stadium: 'Santiago Bernabeu',
       about: 'String',
       colours: "String",
-      img: "Jakiś string"
+      imageURL: "https://i.imgur.com/IOjA6Wu.png"
     }
   );
 };
