@@ -1,3 +1,4 @@
+
 const team = (sequelize, DataTypes) => {
   const Team = sequelize.define('team', {
     name:{
@@ -23,16 +24,18 @@ const team = (sequelize, DataTypes) => {
     },
     imageURL: {
       type: DataTypes.STRING,
-      validate: {
-        isUrl: {
-          args: true,
-          msg: 'String is not URL type!'
-        }
-      }
+      // validate: {
+      //   isUrl: {
+      //     args: true,
+      //     msg: 'String is not URL type!'
+      //   }
+      // }
     }
   });
 
-  //add associate with players
+  Team.associate = models => {
+    Team.hasMany(models.Player, { onDelete: 'CASCADE' })
+  }
 
   return Team;
 }

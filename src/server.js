@@ -115,8 +115,19 @@ const createUsersWithMessages = async date => {
       stadium: 'Camp Nou',
       about: 'String',
       colours: "String",
-      imageURL: "https://i.imgur.com/p8zqNbR.png"
-    }
+      imageURL: "https://i.imgur.com/p8zqNbR.png",
+      players: [
+        {
+          name: 'Leo Messi',
+          number: 10,
+          position: 'RW',
+          bornAt: '1987-06-24',
+        },
+      ]
+    },
+    {
+      include: [models.Player],
+    },
   );
 
   await models.Team.create(
@@ -125,7 +136,18 @@ const createUsersWithMessages = async date => {
       stadium: 'Santiago Bernabeu',
       about: 'String',
       colours: "String",
-      imageURL: "https://i.imgur.com/IOjA6Wu.png"
-    }
+      imageURL: "https://i.imgur.com/IOjA6Wu.png",
+      players: [
+        {
+          name: 'Karim Benzema',
+          number: 10,
+          position: 'ST',
+          bornAt: '1987-06-24',
+        },
+      ]
+    },
+    {
+      include: [models.Player],
+    },
   );
 };

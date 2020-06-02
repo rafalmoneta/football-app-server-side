@@ -19,6 +19,7 @@ export default gql`
     about: String
     colours: String
     imageURL: String
+    players: [Player!]
   }
 
   input NewTeamInput {

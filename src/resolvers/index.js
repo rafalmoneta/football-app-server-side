@@ -3,6 +3,7 @@ import { GraphQLDateTime } from 'graphql-iso-date';
 import userResolvers from './user';
 import messageResolvers from './message';
 import teamResolvers from './team';
+import playerResolvers from './player';
  
 const customScalarResolver = {
   Date: GraphQLDateTime,
@@ -13,4 +14,5 @@ export default [
   userResolvers,
   messageResolvers,
   teamResolvers,
+  playerResolvers,
 ];

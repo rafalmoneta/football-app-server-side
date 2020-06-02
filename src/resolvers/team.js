@@ -1,6 +1,4 @@
 
-
-
 export default {
   Query: {
     teams: async(_, __, {models}) => {
@@ -20,5 +18,15 @@ export default {
         where: {id},
       });
     },
+  },
+
+  Team: {
+    players: async (team, _, {models}) => {
+      return await models.Player.findAll({
+        where: {
+          teamId: team.id
+        }
+      })
+    }
   }
 }
