@@ -20,6 +20,9 @@ const player = (sequelize, DataTypes) => {
     },
     position: {
       type: DataTypes.STRING,
+    },
+    imageURL: {
+      type: DataTypes.STRING,
     }
   });
  

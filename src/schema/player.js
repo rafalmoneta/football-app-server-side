@@ -20,6 +20,7 @@ export default gql`
     bornAt: String!
     team: Team!
     position: String
+    imageURL: String
   }
 
   input NewPlayerInput {

@@ -122,6 +122,7 @@ const createUsersWithMessages = async date => {
           number: 10,
           position: 'RW',
           bornAt: '1987-06-24',
+          imageURL: 'https://i.imgur.com/QiiE9Dw.png'
         },
       ]
     },
@@ -143,6 +144,7 @@ const createUsersWithMessages = async date => {
           number: 10,
           position: 'ST',
           bornAt: '1987-06-24',
+          imageURL: 'https://www.pngitem.com/pimgs/m/522-5222180_karim-benzemarender-getafe-vs-real-madrid-2019-hd.png'
         },
       ]
     },
