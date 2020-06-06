@@ -14,6 +14,8 @@ const models = {
   Message: sequelize.import('./message'),
   Team: sequelize.import('./team'),
   Player: sequelize.import('./player'),
+  Match: sequelize.import('./match'),
+  Matchweek: sequelize.import('./matchweek'),
 };
  
 Object.keys(models).forEach(key => {

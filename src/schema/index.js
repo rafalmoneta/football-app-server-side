@@ -4,6 +4,8 @@ import userSchema from './user';
 import messageSchema from './message';
 import teamSchema from './team';
 import playerSchema from './player';
+import matchSchema from './match';
+import matchweekSchema from './matchweek';
 
 const linkSchema = gql`
   scalar Date
@@ -22,4 +24,4 @@ const linkSchema = gql`
   }
 `;
  
-export default [linkSchema, userSchema, messageSchema, teamSchema, playerSchema];
+export default [linkSchema, userSchema, messageSchema, teamSchema, playerSchema, matchSchema, matchweekSchema];

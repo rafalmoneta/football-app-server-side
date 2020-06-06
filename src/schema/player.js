@@ -29,5 +29,6 @@ export default gql`
     bornAt: String!
     position: String
     teamId: ID!
+    imageURL: String
   }
 `

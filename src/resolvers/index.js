@@ -4,6 +4,7 @@ import userResolvers from './user';
 import messageResolvers from './message';
 import teamResolvers from './team';
 import playerResolvers from './player';
+import matchResolvers from './match';
  
 const customScalarResolver = {
   Date: GraphQLDateTime,
@@ -15,4 +16,5 @@ export default [
   messageResolvers,
   teamResolvers,
   playerResolvers,
+  matchResolvers,
 ];

@@ -124,6 +124,13 @@ const createUsersWithMessages = async date => {
           bornAt: '1987-06-24',
           imageURL: 'https://i.imgur.com/QiiE9Dw.png'
         },
+        {
+          name: "Frankie De Jong",
+          position: "CDM",
+          number: 21,
+          bornAt: "1990-09-19",
+          imageURL: "https://futhead.cursecdn.com/static/img/20/players_alt/p134446430.png"
+        },
       ]
     },
     {
@@ -152,4 +159,12 @@ const createUsersWithMessages = async date => {
       include: [models.Player],
     },
   );
+
+  await models.Match.create(
+    {
+      home: 'FC Barcelona',
+      away: 'Real Madryt',
+      
+    }
+  )
 };
