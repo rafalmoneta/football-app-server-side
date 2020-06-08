@@ -160,11 +160,49 @@ const createUsersWithMessages = async date => {
     },
   );
 
-  await models.Match.create(
+  await models.Matchweek.create(
     {
-      home: 'FC Barcelona',
-      away: 'Real Madryt',
-      
-    }
+      number: 1,
+      matches: [
+        {
+          home: 'FC Barcelona',
+          away: 'Real Madryt',
+          home_score: 5,
+          away_score: 1,
+        },
+        {
+          home: 'Manchester United',
+          away: 'Manchester City',
+          home_score: 3,
+          away_score: 1,
+        }
+      ]
+    },
+    {
+      include: [models.Match],
+    },
+  )
+
+  await models.Matchweek.create(
+    {
+      number: 2,
+      matches: [
+        {
+          home: 'FC Barcelona',
+          away: 'Real Madryt',
+          home_score: 6,
+          away_score: 2,
+        },
+        {
+          home: 'Manchester United',
+          away: 'Manchester City',
+          home_score: 0,
+          away_score: 3,
+        }
+      ]
+    },
+    {
+      include: [models.Match],
+    },
   )
 };

@@ -3,7 +3,7 @@ import gql from "graphql-tag";
 
 export default gql`
   extend type Query {
-    matchweek: [Match]
+    allMatches: [Match]
     match(id: ID!): Match!
   }
 
