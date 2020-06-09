@@ -19,7 +19,13 @@ const match = (sequelize, DataTypes) => {
     away_score: {
       type: DataTypes.INTEGER
     },
-    result: {
+    awayImage: {
+      type: DataTypes.STRING
+    },
+    homeImage: {
+      type: DataTypes.STRING
+    },
+    stadium: {
       type: DataTypes.STRING
     },
     date: {

@@ -167,14 +167,14 @@ const createUsersWithMessages = async date => {
         {
           home: 'FC Barcelona',
           away: 'Real Madryt',
-          home_score: 5,
-          away_score: 1,
+          home_score: 6,
+          away_score: 2,
         },
         {
           home: 'Manchester United',
           away: 'Manchester City',
-          home_score: 3,
-          away_score: 1,
+          home_score: 0,
+          away_score: 3,
         }
       ]
     },

@@ -6,5 +6,5 @@ export default {
     allMatches: async(_, __, {models}) => {
       return await models.Match.findAll();
     }
-  }
+  },
 }

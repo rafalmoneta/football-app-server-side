@@ -10,10 +10,12 @@ export default gql`
   type Match {
     id: ID!
     home: String!
+    homeImage: String
     away: String!
+    awayImage: String
     home_score: Int
     away_score: Int
-    result: String
+    stadium: String
     date: String
     matchweek: Matchweek
 
